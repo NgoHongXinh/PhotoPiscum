@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		247801342E8ABC8000D69ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 247801152E8ABC7E00D69ED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2478011C2E8ABC7F00D69ED5;
+			remoteInfo = PhotoPiscum;
+		};
+		2478013E2E8ABC8000D69ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 247801152E8ABC7E00D69ED5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2478011C2E8ABC7F00D69ED5;
+			remoteInfo = PhotoPiscum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2478011D2E8ABC7F00D69ED5 /* PhotoPiscum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPiscum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		247801332E8ABC8000D69ED5 /* PhotoPiscumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoPiscumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2478013D2E8ABC8000D69ED5 /* PhotoPiscumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoPiscumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		247801452E8ABC8000D69ED5 /* Exceptions for "PhotoPiscum" folder in "PhotoPiscum" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2478011C2E8ABC7F00D69ED5 /* PhotoPiscum */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2478011F2E8ABC7F00D69ED5 /* PhotoPiscum */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				247801452E8ABC8000D69ED5 /* Exceptions for "PhotoPiscum" folder in "PhotoPiscum" target */,
+			);
+			path = PhotoPiscum;
+			sourceTree = "<group>";
+		};
+		247801362E8ABC8000D69ED5 /* PhotoPiscumTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PhotoPiscumTests;
+			sourceTree = "<group>";
+		};
+		247801402E8ABC8000D69ED5 /* PhotoPiscumUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PhotoPiscumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2478011A2E8ABC7F00D69ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247801302E8ABC8000D69ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2478013A2E8ABC8000D69ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		247801142E8ABC7E00D69ED5 = {
+			isa = PBXGroup;
+			children = (
+				2478011F2E8ABC7F00D69ED5 /* PhotoPiscum */,
+				247801362E8ABC8000D69ED5 /* PhotoPiscumTests */,
+				247801402E8ABC8000D69ED5 /* PhotoPiscumUITests */,
+				2478011E2E8ABC7F00D69ED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2478011E2E8ABC7F00D69ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2478011D2E8ABC7F00D69ED5 /* PhotoPiscum.app */,
+				247801332E8ABC8000D69ED5 /* PhotoPiscumTests.xctest */,
+				2478013D2E8ABC8000D69ED5 /* PhotoPiscumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2478011C2E8ABC7F00D69ED5 /* PhotoPiscum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247801462E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscum" */;
+			buildPhases = (
+				247801192E8ABC7F00D69ED5 /* Sources */,
+				2478011A2E8ABC7F00D69ED5 /* Frameworks */,
+				2478011B2E8ABC7F00D69ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2478011F2E8ABC7F00D69ED5 /* PhotoPiscum */,
+			);
+			name = PhotoPiscum;
+			packageProductDependencies = (
+			);
+			productName = PhotoPiscum;
+			productReference = 2478011D2E8ABC7F00D69ED5 /* PhotoPiscum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		247801322E8ABC8000D69ED5 /* PhotoPiscumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2478014B2E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscumTests" */;
+			buildPhases = (
+				2478012F2E8ABC8000D69ED5 /* Sources */,
+				247801302E8ABC8000D69ED5 /* Frameworks */,
+				247801312E8ABC8000D69ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				247801352E8ABC8000D69ED5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				247801362E8ABC8000D69ED5 /* PhotoPiscumTests */,
+			);
+			name = PhotoPiscumTests;
+			packageProductDependencies = (
+			);
+			productName = PhotoPiscumTests;
+			productReference = 247801332E8ABC8000D69ED5 /* PhotoPiscumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2478013C2E8ABC8000D69ED5 /* PhotoPiscumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2478014E2E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscumUITests" */;
+			buildPhases = (
+				247801392E8ABC8000D69ED5 /* Sources */,
+				2478013A2E8ABC8000D69ED5 /* Frameworks */,
+				2478013B2E8ABC8000D69ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2478013F2E8ABC8000D69ED5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				247801402E8ABC8000D69ED5 /* PhotoPiscumUITests */,
+			);
+			name = PhotoPiscumUITests;
+			packageProductDependencies = (
+			);
+			productName = PhotoPiscumUITests;
+			productReference = 2478013D2E8ABC8000D69ED5 /* PhotoPiscumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		247801152E8ABC7E00D69ED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					2478011C2E8ABC7F00D69ED5 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					247801322E8ABC8000D69ED5 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2478011C2E8ABC7F00D69ED5;
+					};
+					2478013C2E8ABC8000D69ED5 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2478011C2E8ABC7F00D69ED5;
+					};
+				};
+			};
+			buildConfigurationList = 247801182E8ABC7E00D69ED5 /* Build configuration list for PBXProject "PhotoPiscum" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 247801142E8ABC7E00D69ED5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2478011E2E8ABC7F00D69ED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2478011C2E8ABC7F00D69ED5 /* PhotoPiscum */,
+				247801322E8ABC8000D69ED5 /* PhotoPiscumTests */,
+				2478013C2E8ABC8000D69ED5 /* PhotoPiscumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2478011B2E8ABC7F00D69ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247801312E8ABC8000D69ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2478013B2E8ABC8000D69ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		247801192E8ABC7F00D69ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2478012F2E8ABC8000D69ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247801392E8ABC8000D69ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		247801352E8ABC8000D69ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2478011C2E8ABC7F00D69ED5 /* PhotoPiscum */;
+			targetProxy = 247801342E8ABC8000D69ED5 /* PBXContainerItemProxy */;
+		};
+		2478013F2E8ABC8000D69ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2478011C2E8ABC7F00D69ED5 /* PhotoPiscum */;
+			targetProxy = 2478013E2E8ABC8000D69ED5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		247801472E8ABC8000D69ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoPiscum/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		247801482E8ABC8000D69ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoPiscum/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		247801492E8ABC8000D69ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2478014A2E8ABC8000D69ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2478014C2E8ABC8000D69ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoPiscum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoPiscum";
+			};
+			name = Debug;
+		};
+		2478014D2E8ABC8000D69ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoPiscum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoPiscum";
+			};
+			name = Release;
+		};
+		2478014F2E8ABC8000D69ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoPiscum;
+			};
+			name = Debug;
+		};
+		247801502E8ABC8000D69ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhnh.PhotoPiscumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoPiscum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		247801182E8ABC7E00D69ED5 /* Build configuration list for PBXProject "PhotoPiscum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247801492E8ABC8000D69ED5 /* Debug */,
+				2478014A2E8ABC8000D69ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247801462E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247801472E8ABC8000D69ED5 /* Debug */,
+				247801482E8ABC8000D69ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2478014B2E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2478014C2E8ABC8000D69ED5 /* Debug */,
+				2478014D2E8ABC8000D69ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2478014E2E8ABC8000D69ED5 /* Build configuration list for PBXNativeTarget "PhotoPiscumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2478014F2E8ABC8000D69ED5 /* Debug */,
+				247801502E8ABC8000D69ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 247801152E8ABC7E00D69ED5 /* Project object */;
+}
