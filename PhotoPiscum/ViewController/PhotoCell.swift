@@ -1,10 +1,3 @@
-//
-//  PhotoCell.swift
-//  PhotoPiscum
-//
-//  Created by Dulcie on 10/1/25.
-//
-
 import UIKit
 
 final class PhotoCell: UITableViewCell {
@@ -22,7 +15,16 @@ final class PhotoCell: UITableViewCell {
     private let authorLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = .systemFont(ofSize: 14)
+        lbl.font = .systemFont(ofSize: 14, weight: .semibold)
+        lbl.numberOfLines = 1
+        return lbl
+    }()
+
+    private let sizeLabel: UILabel = {
+        let lbl = UILabel()
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.font = .systemFont(ofSize: 12)
+        lbl.textColor = .darkGray
         lbl.numberOfLines = 1
         return lbl
     }()
@@ -40,6 +42,7 @@ final class PhotoCell: UITableViewCell {
     private func setupLayout() {
         contentView.addSubview(photoImageView)
         contentView.addSubview(authorLabel)
+        contentView.addSubview(sizeLabel)
 
         NSLayoutConstraint.activate([
             photoImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
@@ -50,7 +53,11 @@ final class PhotoCell: UITableViewCell {
             authorLabel.topAnchor.constraint(equalTo: photoImageView.bottomAnchor, constant: 8),
             authorLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
             authorLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
-            authorLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+
+            sizeLabel.topAnchor.constraint(equalTo: authorLabel.bottomAnchor, constant: 4),
+            sizeLabel.leadingAnchor.constraint(equalTo: authorLabel.leadingAnchor),
+            sizeLabel.trailingAnchor.constraint(equalTo: authorLabel.trailingAnchor),
+            sizeLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
         ])
     }
 
@@ -58,6 +65,7 @@ final class PhotoCell: UITableViewCell {
         super.prepareForReuse()
         photoImageView.image = nil
         authorLabel.text = nil
+        sizeLabel.text = nil
         if let url = currentURL { ImageLoader.shared.cancelLoad(for: url) }
         currentTask?.cancel()
         currentTask = nil
@@ -66,6 +74,7 @@ final class PhotoCell: UITableViewCell {
 
     func configure(with photo: Photo) {
         authorLabel.text = photo.author
+        sizeLabel.text = "Size: \(photo.width) x \(photo.height)" // 👈 hiển thị size
 
         // Build a thumbnail URL sized for device width & height 200
         let width = Int(UIScreen.main.bounds.width - 16)
@@ -79,8 +88,6 @@ final class PhotoCell: UITableViewCell {
                     self.photoImageView.alpha = 0
                     self.photoImageView.image = img
                     UIView.animate(withDuration: 0.25) { self.photoImageView.alpha = 1 }
-                } else {
-                    // keep placeholder
                 }
             }
         }

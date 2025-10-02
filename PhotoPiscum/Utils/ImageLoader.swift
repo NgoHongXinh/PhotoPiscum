@@ -1,10 +1,3 @@
-//
-//  ImageLoader.swift
-//  PhotoPiscum
-//
-//  Created by Dulcie on 10/1/25.
-//
-
 import UIKit
 
 final class ImageLoader {
@@ -20,64 +13,105 @@ final class ImageLoader {
         cache.totalCostLimit = 1024 * 1024 * 100 // ~100MB
     }
 
+    /// Load image with caching & optional resize
     @discardableResult
-    func loadImage(from url: URL, targetSize: CGSize? = nil, completion: @escaping (UIImage?) -> Void) -> URLSessionDataTask? {
+    func loadImage(
+        from url: URL,
+        targetSize: CGSize? = nil,
+        completion: @escaping (UIImage?) -> Void
+    ) -> URLSessionDataTask? {
+
         let key = cacheKey(url: url, size: targetSize)
-        if let img = cache.object(forKey: key as NSString) {
-            completion(img)
+
+        // 1. Check in-memory cache first
+        if let cached = cache.object(forKey: key as NSString) {
+            completion(cached)
             return nil
         }
 
+        // 2. If a task already running for this URL → return it
         lock.lock()
-        if let existing = runningTasks[url] {
+        if let existingTask = runningTasks[url] {
             lock.unlock()
-            return existing
+            return existingTask
         }
         lock.unlock()
 
-        let task = session.dataTask(with: url) { [weak self] data, _, _ in
+        // 3. Start new task
+        let task = session.dataTask(with: url) { [weak self] data, _, error in
             guard let self = self else { return }
-            var image: UIImage? = nil
-            if let d = data, let raw = UIImage(data: d) {
-                if let ts = targetSize {
-                    image = raw.scaled(to: ts)
-                } else {
-                    image = raw
-                }
-                if let img = image, let cost = self.imageCost(img: img) {
-                    self.cache.setObject(img, forKey: key as NSString, cost: cost)
-                } else if let img = image {
-                    self.cache.setObject(img, forKey: key as NSString)
-                }
+            defer {
+                self.lock.lock()
+                self.runningTasks.removeValue(forKey: url)
+                self.lock.unlock()
             }
+
+            // Handle error
+            if let error = error as NSError?, error.code == NSURLErrorCancelled {
+                // Task cancelled, không cần completion
+                return
+            }
+
+            guard let data = data, let rawImage = UIImage(data: data) else {
+                DispatchQueue.main.async { completion(nil) }
+                return
+            }
+
+            // Resize nếu có targetSize
+            let finalImage: UIImage
+            if let size = targetSize {
+                finalImage = rawImage.scaled(to: size)
+            } else {
+                finalImage = rawImage
+            }
+
+            // Save vào cache
+            if let cost = self.imageCost(img: finalImage) {
+                self.cache.setObject(finalImage, forKey: key as NSString, cost: cost)
+            } else {
+                self.cache.setObject(finalImage, forKey: key as NSString)
+            }
+
             DispatchQueue.main.async {
-                completion(image)
+                completion(finalImage)
             }
-            self.lock.lock(); self.runningTasks.removeValue(forKey: url); self.lock.unlock()
         }
-        lock.lock(); runningTasks[url] = task; lock.unlock()
+
+        // 4. Add vào runningTasks
+        lock.lock()
+        runningTasks[url] = task
+        lock.unlock()
+
         task.resume()
         return task
     }
 
+    /// Cancel task đang chạy
     func cancelLoad(for url: URL) {
         lock.lock()
-        let t = runningTasks[url]
+        if let task = runningTasks[url] {
+            task.cancel()
+            runningTasks.removeValue(forKey: url)
+        }
         lock.unlock()
-        t?.cancel()
     }
 
+    /// Cache key gồm URL + size
     private func cacheKey(url: URL, size: CGSize?) -> String {
-        if let s = size { return "\(url.absoluteString)-\(Int(s.width))x\(Int(s.height))" }
+        if let s = size {
+            return "\(url.absoluteString)-\(Int(s.width))x\(Int(s.height))"
+        }
         return url.absoluteString
     }
 
+    /// Ước lượng cost của ảnh trong memory
     private func imageCost(img: UIImage) -> Int? {
         guard let cg = img.cgImage else { return nil }
         return cg.bytesPerRow * cg.height
     }
 }
 
+// MARK: - UIImage Resize Helper
 private extension UIImage {
     func scaled(to target: CGSize) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: target)
